@@ -94,6 +94,7 @@ dependencies {
     def spockVersion = "1.3-groovy-2.5"
     def errorproneVersion = "2.5.1"
 
+    // dependency-management-plugin によりバージョン番号が自動で設定されるもの
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-validation")
     // WebAPI を提供するだけの Web アプリに spring-boot-starter-thymeleaf は不要だが、
@@ -102,6 +103,9 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    // dependency-management-plugin によりバージョン番号が自動で設定されないもの、あるいは最新バージョンを指定したいもの
+    testImplementation("net.javacrumbs.json-unit:json-unit-spring:2.25.0")
 
     // for lombok
     // testAnnotationProcessor、testCompileOnly を併記しなくてよいよう configurations で設定している
