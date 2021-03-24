@@ -1,5 +1,6 @@
 package ksbysample.webapp.springdocsample.webapi.book;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import ksbysample.webapp.springdocsample.exception.BookInvalidException;
 import ksbysample.webapp.springdocsample.exception.BookNotFoundException;
 import org.springframework.http.HttpStatus;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
  * WebAPI 用 Error Handler クラス
  */
 @RestControllerAdvice
+@Hidden
 public class WebapiBookErrorHandler {
 
     /**
