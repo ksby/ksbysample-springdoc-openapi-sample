@@ -105,6 +105,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
     // dependency-management-plugin によりバージョン番号が自動で設定されないもの、あるいは最新バージョンを指定したいもの
+    implementation("org.springdoc:springdoc-openapi-ui:1.5.5")
     testImplementation("net.javacrumbs.json-unit:json-unit-spring:2.25.0")
 
     // for lombok
